@@ -36,10 +36,22 @@ border-color: gray;
 height: 35px;
 width: 35px;
 margin: 2px;
+background-color :white;
 }
 
-.given-cell{
-border-color: white;
+/* Adds a checkmark to the given cell */
+.given-cell:before {
+    content: '\2713';
+    color: gray;
+/*border-color: white;*/
+}
+
+.selected-palette:after {
+    content: '\21d0';
+}
+
+.selected-palette-label {
+    background-color: lightgoldenrodyellow;
 }
 #palette{
 display: table-cell;
